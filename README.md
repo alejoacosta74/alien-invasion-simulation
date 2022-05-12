@@ -1,6 +1,8 @@
 
 # Alien invasion
 
+<html><img src="./aliens.png" height="300px"/></html>
+
 ## Description
 
 Golang based app that simulates a earth invasion of outerspace mad aliens.
