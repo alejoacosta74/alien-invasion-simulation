@@ -5,7 +5,7 @@
 
 ## Description
 
-Golang based app that simulates a earth invasion of outerspace mad aliens.
+Golang based app that simulates an earth invasion of mad aliens from outerspace.
 
 These aliens start out at random places on the given world map, and wander around randomly, following links (directions). 
 
