@@ -9,6 +9,20 @@ const (
 	West
 )
 
+func (d Directions) String() string {
+	switch d {
+	case North:
+		return "North"
+	case South:
+		return "South"
+	case East:
+		return "East"
+	case West:
+		return "West"
+	}
+	return ""
+}
+
 type neighbors map[Directions]string
 
 func (n neighbors) GetNeighbor(d Directions) string {

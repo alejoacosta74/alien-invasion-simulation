@@ -1,6 +1,7 @@
 package world
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
 
@@ -70,19 +71,8 @@ func (w *World) PrintWorld() {
 	println("Number of cities: ", len(w.cityMap))
 	for _, c := range w.cityMap {
 		println("\tCity: ", c.Name)
-		var direction string
 		for d, n := range c.GetNeighborsMap() {
-			switch d {
-			case cities.North:
-				direction = "North"
-			case cities.South:
-				direction = "South"
-			case cities.East:
-				direction = "East"
-			case cities.West:
-				direction = "West"
-			}
-			println("\t\tNeighbor: ", n, " -> ", direction)
+			fmt.Printf("\t\t direction -> %s : neighbor: %s\n", d, n)
 		}
 	}
 	println("----------------------------------------\n")

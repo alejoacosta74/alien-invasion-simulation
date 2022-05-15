@@ -71,8 +71,6 @@ func HandleInvasionSignals(logger *logrus.Logger, cancelFunc context.CancelFunc,
 				startWanderChan <- struct{}{}
 				moves++
 				logger.Debugf("Sent move order to alien (N = %d). Total moves: %d", N, moves)
-			default:
-				continue
 			}
 			if N == 1 && logger.GetLevel() != logrus.DebugLevel {
 				progBar.Add(1)
